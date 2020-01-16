@@ -439,51 +439,93 @@ a {
 .portfolio .common_heding img{
     margin-left: -87px;
 }
-.gly{}
-
-.gly_iteam{
-    width: 220px;
-    margin: 0 10px;
+.gly{
     float: left;
 }
-.gly_iteam_img{
+.mb_20{
+    margin-bottom: 20px;
+}
+.g_item{
+    width: 220px;
+    margin: 0 10px;
+}
+.g_img{
     position: relative;
 }
-.gly_img_overlay{
+.g_img_overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    overflow: hidden;
+    transition: all linear 0.4s;
+}
+.g_img_overlay a{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    color: #fff;
+    background: #5bc5f4;
+    display: inline-block;
+    font-size: 18px;
+    text-align: center;
+    opacity: 0;
+    transition: all linear 0.7s;
+}
+.g_img_overlay a i{
+    line-height: 40px;
+}
+.g_item:hover .g_img_overlay a{
+     opacity: 1
+}
+.g_item:hover .g_img_overlay{
+    height: 100%;
+    opacity: 1;
+}
+
+.g_img2{
+    position: relative;
+}
+.g_img_overlay_2{
     position: absolute;
     left: 0;
     top: 0;
-    height: 0;
-    width: 100%;
     background: rgba(0, 0, 0, 0.6);
-    transition: all linear 0.4s;
-    text-align: center;
-    opacity: 0;
+    width: 100%;
+    height: 0;
+    overflow: hidden;
+    transition: all linear .4s;
 }
-.gly_img_overlay a{
+.g_img_overlay_2 a{
     position: absolute;
-    display: inline-block;
     left: 50%;
     top: 50%;
     height: 40px;
     width: 40px;
-    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 50%;
+    color: #fff;
+    font-size: 18px;
     background: #5bc5f4;
-    font-size: 20px;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%,-50%);
+    transition: ALL LINEAR .7S;
+    opacity: 0;
 }
-.gly_img_overlay a i{
-    line-height: 40px;
-}
-.gly_iteam_img:hover .gly_img_overlay{
+.g_item:hover .g_img_overlay_2{
     height: 100%;
-    opacity: 1;
-   
-} 
-.mt_20{
-    margin-top: 20px;
 }
+.g_item:hover .g_img_overlay_2 a{
+        opacity: 1;
+}
+
 /* ---------------- .portfolio end ------------------ */
 
 
